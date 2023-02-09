@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createEvent</title>
+</head>
+<body>
+    <h1>The Document Object</h1>
+<h2>The createEvent() Method</h2>
+
+<p>The createEvent() method allows you to simulate events.</p>
+
+<p>"myDiv" will get a new star every time you mouse over it:</p>
+
+<div id="myDiv"
+style="padding:50px;background-color:yellow;"
+onmouseover="this.innerHTML += '*';">*</div>
+
+<p><button onclick="myFunction(event)">Simulate Mouse Over</button></p>
+
+<script>
+function myFunction(event) {
+  const ev = document.createEvent("MouseEvent");
+  ev.initMouseEvent("mouseover", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+
+  document.getElementById("myDiv").dispatchEvent(ev);
+}
+</script>
+</body>
+</html>

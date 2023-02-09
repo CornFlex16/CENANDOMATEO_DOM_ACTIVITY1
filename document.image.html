@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="myImage" src="https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="My Image">
+
+<button id="changeImage">Change Image</button>
+
+<script>
+  // Get the button
+  var button = document.getElementById("changeImage");
+
+  // Get the first image element
+  var image = document.images[0];
+
+  // Add an event listener to the button
+  button.addEventListener("click", function() {
+    // Change the source of the image
+    image.src = "https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+  });
+</script>
+
+
+</body>
+</html>

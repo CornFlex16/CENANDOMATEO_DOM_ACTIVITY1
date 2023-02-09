@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>createElement()</title>
+</head>
+<body>
+    <div id="h1Tag"></div>
+
+    <button id="btnH2">Create h2 Element</button>
+    <div id="myDiv"></div>
+
+<script>
+    //create h2 inside the div with ID myDiv
+    document.getElementById("btnH2").addEventListener("click", function() {
+            var divTag = document.getElementById("myDiv");
+            var newH2 = document.createElement("h2");
+            newH2.innerHTML = "This is a new h2 Element.";
+           // document.body.appendChild(newH2); 
+           divTag.appendChild(newH2)
+  });
+
+  //create h1 inside a div with id h1Tag
+    var varName = document.createElement("h1");
+        varName.innerHTML = "Im new H1.";
+
+        h1Tag.appendChild(varName);
+</script>
+
+</body>
+</html>

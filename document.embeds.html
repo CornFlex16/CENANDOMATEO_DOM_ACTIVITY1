@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Document Object</h1>
+<h2>The embeds Property</h2>
+
+<p>The number of embed elements in this document:</p>
+<p id="demo"></p>
+
+<embed type="image/jpg" src="https://images.pexels.com/photos/1083515/pexels-photo-1083515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+<embed type="image/jpg" src="https://images.pexels.com/photos/105075/pexels-photo-105075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+
+<script>
+let num = document.embeds.length;
+document.getElementById("demo").innerHTML = num;
+</script>
+</body>
+</html>

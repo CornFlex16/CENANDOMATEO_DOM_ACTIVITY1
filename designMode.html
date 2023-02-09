@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="buttonsContainer" contentEditable="false">
+        <button id="editBtn">Edit</button>
+        <button id="saveBtn">Save</button>
+      </div>
+      
+      <div id="content">
+        <h1>Change Me!!!!</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, maxime recusandae. Est maiores suscipit culpa soluta ex nobis inventore neque sequi! Aut magni beatae cupiditate debitis, aspernatur voluptates atque rem!</p>
+        <h2>change me!!!!</h2>
+        <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam inventore maxime veniam culpa minus pariatur ducimus velit! Sunt exercitationem nostrum dolore! Culpa illo provident impedit quibusdam dignissimos aliquid quam. Porro.</em></p>
+        <p><strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat aliquam repudiandae sapiente consequatur accusamus adipisci iusto in ratione! Suscipit a perspiciatis aperiam dolores. Id velit qui vitae enim quod iure.</strong></p>
+    </div>
+      
+      <script>
+        document.getElementById("editBtn").addEventListener("click", function() {
+          document.designMode = "on";
+          document.getElementById("content").focus();
+        });
+      
+        document.getElementById("saveBtn").addEventListener("click", function() {
+          document.designMode = "off";
+          var content = document.getElementById("content").innerHTML;
+          // Save the content to your preferred storage method (e.g. localStorage, database, etc.)
+        });
+      </script>
+      
+
+</body>
+</html>

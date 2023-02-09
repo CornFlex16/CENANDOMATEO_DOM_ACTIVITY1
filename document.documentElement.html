@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>document.documentElement is a property in the HTML Document Object Model (DOM) that refers to the root element of an HTML document, which is typically the &lt/html&gt; element. The &lt html&gt; element acts as the container for all other elements on a web page, including the &lt; head> and &lt; body> elements.
+        </p>
+       <p>You can use the document.documentElement property to access and manipulate properties of the root &lt; html> element, such as its style and attributes.</p>  
+       <p>You can use the document.documentElement property to access and manipulate properties of the root &lt/html&gt element, such as its style and attributes. For example: &lt;/p></p>
+        
+  </body>
+</html>
+
+<script>
+  // Change the background color of the html element
+  document.documentElement.style.backgroundColor = "yellowgreen";
+
+  // Get the lang attribute of the html element
+  var lang = document.documentElement.lang;
+  console.log("Language attribute: " + lang);
+</script>
